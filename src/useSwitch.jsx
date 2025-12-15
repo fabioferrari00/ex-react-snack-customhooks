@@ -5,12 +5,7 @@ const useSwitch = (initialValue = false) => {
   const [isOn, setIsOn] = useState(initialValue)
 
   const toggle = () => {
-    if (!initialValue) {
-      setIsOn(true)
-    } else {
-      setIsOn(initialValue)
-    }
-    console.log(isOn)
+    setIsOn(curr => !curr)
   }
 
   return [isOn, toggle]
