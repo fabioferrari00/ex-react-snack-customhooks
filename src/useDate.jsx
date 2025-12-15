@@ -14,10 +14,6 @@ const useDate = () => {
     }
 
   })
-
-
-
-
   return date
 }
 
